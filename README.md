@@ -77,20 +77,3 @@ When building AI-Quantum interfaces, developers typically use one of two archite
 | **Security / Safety** | **Low.** Vulnerable to Prompt Injection where a malicious prompt forces the LLM to run arbitrary local OS commands [1]. | **High.** Sanitized by a regular-expression parser. Malformed syntax or non-DSL inputs are blocked [1]. |
 | **VRAM Footprint** | Requires massive frontier models (e.g. GPT-4, Claude) to reliably output correct syntax [1]. | Runs efficiently on local consumer hardware using quantized 7B parameter adapters [3, 5]. |
 
----
-
-## Contents of this Repository
-*   `adapter_model.safetensors`: The trained LoRA adapter weights (78.9 MB) [2].
-*   `adapter_config.json`: Config file defining target modules and scaling factors [2].
-*   `tokenizer.json` / `tokenizer_config.json`: Text vocabulary mappings adjusted for the Qwen template [2].
-*   `chat_template.jinja`: Jinja2 template ensuring structured multi-turn conversation formatting [2].
-
----
-
-## References
-[1] https://huggingface.co/docs/trl/en/sft_trainer  
-[2] https://huggingface.co/docs/peft/en/index  
-[3] https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct  
-[4] https://qiskit.org/ecosystem/aer/  
-[5] https://huggingface.co/docs/peft/en/developer_guides/lora  
-[6] https://www.kaggle.com/docs/notebooks
