@@ -10,7 +10,7 @@
 
 *A lightweight, deterministic bridge between natural language and quantum execution.*  
 **Developed by [Pulsate Labs](https://pulsatelabs.co.za)**
-
+**Hugging face: https://huggingface.co/Mohato/qwen-quantum-adapter**
 ---
 
 ## 🧠 What It Is & What It Does
